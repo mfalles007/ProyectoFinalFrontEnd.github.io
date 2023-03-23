@@ -51,7 +51,7 @@ html{
 }
 /* I N I C I O */
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgb(107, 102, 92)),
+    background: linear-gradient(to top, rgba(30,35,38,.8),  rgb(151, 206, 120)),
     url(img/fondo.jpg);
     background-size: cover;
     height: 100vh;
@@ -184,10 +184,16 @@ html{
 
 /* CURRICULUM */
 .curriculum{
-    background-color: #1e2326;
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgb(151, 206, 120)),
+    url(img/educacion5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90vh;
     color: #fff;
-    padding: 50px 20px;
-}
+    display: flex;
+    align-items: center;
+   }
+
 .curriculum .contenido-seccion{
     max-width: 1100px;
     margin: auto;
@@ -248,11 +254,16 @@ html{
 
 /* CONTACTO */
 .contacto{
-    background-image: url(img/contact_bg.png);
-    background-color: #1e2326;
-    color: #fff;
-    padding: 50px 0;
-}
+     background: linear-gradient(to top, rgba(30,35,38,.8),  rgb(151, 206, 120)),
+     url(img/email4.jpg);
+     background-size: contain;
+     background-repeat: no-repeat;
+     height: 90vh;
+     color: #fff;
+     display: flex;
+     align-items: center;
+    }
+
 .contacto .contenido-seccion{
     max-width: 1100px;
     margin: auto;
@@ -273,7 +284,7 @@ html{
 }
 .contacto .col input, .contacto .col textarea{
     display: block;
-    width: 100%;
+    width: 180%;
     padding: 18px;
     border: none;
     margin-bottom: 20px;
@@ -315,7 +326,7 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }

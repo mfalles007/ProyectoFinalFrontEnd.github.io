@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Portfolio</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
@@ -31,7 +32,7 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/foto-perfil.png" alt="">
+                <img src="img/foto-perfil.jpg" alt="">
             </div>
             <h1>Miguel Angel Falles</h1>
             <h2>Administrador de Redes</h2>
@@ -59,11 +60,11 @@
                     <ul>
                          <li>
                             <strong>Teléfono</strong>
-                            2215626156
+                            +5492215686864
                         </li>
                         <li>
                             <strong>Email</strong>
-                            mfalles007@gmail.com
+                            proyecto@gmail.com
                         </li>
                         
                         <li>
@@ -134,6 +135,17 @@
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>CONTACTO</h2>
+            <script>
+                function confirmacion() {
+                    var respuesta = confirm("Desea enviar este mensaje?");
+                    if (respuesta == true) {
+                        return true; 
+                    } else {
+                        return false;
+                    }
+                }
+
+             </script>
             <div class="fila">
                 
                 <div class="col">
@@ -148,7 +160,7 @@
                         <input type="email" name="email"  placeholder="Ingrese su email"required>    
                         <label>Mensaje</label>
                         <input type="text" name="mensaje" placeholder="Ingrese mensaje"required>  
-                        <input type="submit" value="Enviar">
+                        <button type="submit" onclick='return confirmacion()' class="btn btn-primary">Enviar</button>
                                 
                             
                        </form>
@@ -170,6 +182,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    
 </body>
 </html>
