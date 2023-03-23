@@ -37,18 +37,19 @@
             <h1>Miguel Angel Falles</h1>
             <h2>Administrador de Redes</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                           </div>
+                <a href="https://www.fcaebook.com/Meta"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.skype.com/es/"><i class="fa-brands fa-skype"></i></a>
+                <a href="https://www.linkedin.com/login/es"><i class="fa-brands fa-linkedin-in"></i></a>
+                
+            </div>
         </div>
     </section>
 
     <!-- SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
+                   <h2>Sobre Mí</h2>
             <p><span>Hola, soy Miguel.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
@@ -135,17 +136,7 @@
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>CONTACTO</h2>
-            <script>
-                function confirmacion() {
-                    var respuesta = confirm("Desea enviar este mensaje?");
-                    if (respuesta == true) {
-                        return true; 
-                    } else {
-                        return false;
-                    }
-                }
-
-             </script>
+           
             <div class="fila">
                 
                 <div class="col">
@@ -160,10 +151,16 @@
                         <input type="email" name="email"  placeholder="Ingrese su email"required>    
                         <label>Mensaje</label>
                         <input type="text" name="mensaje" placeholder="Ingrese mensaje"required>  
-                        <button type="submit" onclick='return confirmacion()' class="btn btn-primary">Enviar</button>
-                                
-                            
-                       </form>
+                        <button type="submit"  class="btn btn-primary">Enviar</button>
+                          
+                          <br></br>      
+                        <h6>Consultar hora de envio del mensaje</h6>
+                        <p id="hora"></p>
+                        <script>
+                               const d = new Date();
+                               document.getElementById("hora").innerHTML = d;
+                        </script>
+                    </form>
                    
         </div>
     </section>
@@ -174,14 +171,15 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.fcaebook.com/Meta"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.skype.com/es/"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com/login/es"><i class="fa-brands fa-linkedin-in"></i></a>
             
         </div>
     </footer>
 
+    
     
 </body>
 </html>
